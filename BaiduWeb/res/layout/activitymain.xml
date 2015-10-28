@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+		<LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+		    <LinearLayout
+		        android:id="@+id/layout" 
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+			    <EditText
+			        android:id="@+id/et_url"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:inputType="textUri"
+			        android:singleLine="true"/>
+		
+			    <Button
+			        android:id="@+id/btn_visit"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"/>
+		        
+		    </LinearLayout>
+	
+			<WebView
+				android:id="@+id/web"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"/>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+	   android:id="@+id/ll_btn"
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal">
+       <Button 
+           android:id="@+id/btn_home"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           />
+       <Button 
+           android:id="@+id/btn_left"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"/>
+       <Button 
+           android:id="@+id/btn_right"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"/>
+       <Button 
+           android:id="@+id/btn_exit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"/>
+	</LinearLayout>
+
+</LinearLayout>
