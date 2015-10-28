@@ -107,7 +107,7 @@ android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     		android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         </activity>
      
-        <meta-data android:value="55f15aa667e58eaa480009f8" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="562f7e28e0f55a9adf0031f5" android:name="UMENG_APPKEY"></meta-data>
         <meta-data android:value="baidu" android:name="UMENG_CHANNEL"/>
 
 		

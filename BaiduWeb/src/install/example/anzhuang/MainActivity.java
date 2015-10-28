@@ -2,9 +2,7 @@ package install.example.anzhuang;
 
 import com.umeng.analytics.MobclickAgent;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import android.app.Activity;
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -22,7 +20,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 import android.os.Build;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 	private DevicePolicyManager devicePolicyManager;
 	private ComponentName componentName; 
 	// 定义一个变量，来标识是否退出
